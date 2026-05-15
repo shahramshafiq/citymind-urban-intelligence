@@ -1,7 +1,7 @@
 # CityMind - An Urban Intelligence System
 
-Shahram Shafiq (24i-2541) — Challenges 1, 2 + UI core
-Rafia Ali (24i-0722) — Challenges 3, 4 + CityGraph + Event Log
+Shahram Shafiq (24i-2541) — Challenges 1, 2 + UI core  
+Rafia Ali (24i-0722) — Challenges 3, 4 + CityGraph + Event Log  
 Sara Nasir (24i-0719) — Challenge 5 + Simulation loop + Integration
 
 ## Setup & Running
@@ -11,15 +11,11 @@ Sara Nasir (24i-0719) — Challenge 5 + Simulation loop + Integration
 - Python 3.10 or newer
 - tkinter (built-in with standard Python — no pip installs needed)
 
-### Running with Make
-
-    make run
-
 ### Running directly
 
     python main.py
 
-On Windows without `make`, just run `python main.py` from the project root.
+On Windows, just run `python main.py` from the project root.
 
 ## Project Structure
 
@@ -27,7 +23,6 @@ On Windows without `make`, just run `python main.py` from the project root.
     ├── main.py                     entry point
     ├── city_graph.py               shared CityGraph (single source of truth, observer pattern)
     ├── simulation.py               20-step simulation loop + event log
-    ├── Makefile                    run with `make run`
     ├── challenges/
     │   ├── challenge1_csp.py       CSP: Backtracking + AC-3 + MRV + LCV + Min-Conflicts
     │   ├── challenge2_mst.py       GA: road network optimisation (filename kept for compat)
@@ -83,3 +78,4 @@ When you change a node type during the simulation (left-click → select type), 
 9. A* heuristic: 0.8 × Euclidean distance — admissible and consistent since minimum edge cost is 0.8, so h(n) never overestimates actual path cost
 10. Empty nodes are valid positions for civilians and ambulances
 11. KNN k=5 for crime risk classification; training labels derived from K-Means cluster rankings
+
